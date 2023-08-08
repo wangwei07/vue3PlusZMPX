@@ -1,0 +1,95 @@
+// $f: 16px;
+// .el-form-item__label {
+//   font-size: $f !important;
+// }
+
+/* input textarea 样式设置 */
+.el-input {
+  width: 200px !important;
+}
+.el-input__inner::placeholder {
+  color: #999999 !important;
+}
+.el-form-item__label {
+  font-size: 16px !important;
+  color: #ffffff !important;
+}
+.el-input__inner,
+.el-textarea__inner {
+  background-color: transparent !important;
+  height: 34px !important;
+  color: #e2ffff !important;
+  border: 1px solid #2b5353 !important;
+  box-shadow: none !important;
+}
+
+/* 重置高度否则和text一样高为34px */
+.el-textarea__inner {
+  height: auto !important;
+}
+
+.el-input__inner:hover,
+.el-textarea__inner:hover {
+  background: rgba(0, 127, 125, 0.5) !important;
+}
+
+/* 消除聚焦时候的阴影，以及重新设置背景色，边框颜色 */
+#app .el-input__inner:focus,
+.el-textarea__inner:focus {
+  box-shadow: none !important;
+  background: rgba(0, 36, 40, 0.4) !important;
+  border: 1px solid #007f7d !important;
+}
+
+.el-input__prefix {
+  left: 10px !important;
+}
+
+.el-checkbox__inner {
+  border-color: #2b5353 !important;
+  background-color: transparent !important;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner::after {
+  background-color: transparent !important;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #ffffff !important;
+}
+
+.queryCard .el-form {
+  padding-left: 20px;
+}
+.queryCard .el-form .el-form-item:last-child {
+  position: absolute;
+  right: 20px;
+}
+.queryCard .el-form .el-form-item:last-child::before {
+  content: '';
+  width: 0px;
+  height: 33px;
+  border: 1px solid #2b5353;
+  margin-right: 20px;
+}
+
+/* radio */
+.el-radio__input .el-radio__inner {
+  border-color: #2b5353 !important;
+  background: transparent !important;
+}
+/* radio */
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #2b5353 !important;
+  background: transparent !important;
+}
+
+.el-radio__input.is-checked .el-radio__inner::after {
+  width: 100%;
+  height: 100%;
+  background: url('@/assets/images/common/redioCheck.png') no-repeat center;
+  background-size: 100% 100%;
+}
+.el-radio__label {
+  color: #fff !important;
+}

@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    // o 编译文件输出的目录，比如a.js 生成了a.js会覆盖原先a.js，所以有提示，然后放到输出目录后就不存在覆盖的问题了
+    "outDir": "build",
+    // 编译的目标是什么版本
+    "target": "esnext",
+    // 指定生成哪个模块系统代码
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    // 是否生成map文件
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    // 允许编译JavaScript文件
+    "allowJs": true,
+    // 不生成输出文件 -- 只进行类型检查而不生成代码
+    "noEmit": true,
+    // 编译过程中需要引入的库文件列表
+    "lib": ["esnext", "dom"],
+    // 指定引入类型的声明文件，默认是自动引入所有声明文件，一旦指定该选项，则会禁止自动引入，改为只引入指定类型
+    // 引入node类型声明 vite类型声明
+    "types": ["vite/client", "@types/node"],
+    // 工作根目录
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    // 指定模块的路径，和baseUrl有关，和webpack中的resolve.alias配置一样
+    //指定后可以在文件直接 import '@components'
+    "paths": {
+      "*": ["src/*"],
+      "@/*": ["src/*"],
+      //  "@imgs/*": ["src/assets/imgs/*"],
+      "@views/*": ["src/views/*"],
+      "@utils/*": ["src/utils/*"],
+      "@components/*": ["src/components/*"]
+    },
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false
+  },
+  // 编译器需要编译的文件或者目录
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/assets/icon/index.js",
+    "mock/**/*.ts",
+    "@types/**/*.d.ts",
+    "build/**/*.ts",
+    "src/main.ts",
+    "shims.d.ts",
+    "./auto-imports.d.ts",
+    "src/utils/request.ts",
+    "src/components.d.ts",
+    "env.d.ts"
+  ],
+  // 编译器需要排除的文件或者目录，默认会排除 node_modules 目录下的所有文件和声明文件。
+  "exclude": ["vite.config.ts", "build"]
+}

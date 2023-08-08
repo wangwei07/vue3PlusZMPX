@@ -1,0 +1,65 @@
+{
+  "parser": "vue-eslint-parser",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["vue", "@typescript-eslint", "todo-ddl"],
+  "rules": {
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/extensions": "off",
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "import/no-unresolved": "off",
+    "todo-ddl/diy": "warn",
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "warn",
+    "import/no-extraneous-dependencies": "off",
+    "max-len": "off",
+    "no-restricted-syntax": "off",
+    "no-bitwise": "off",
+    "camelcase": "off",
+    "no-case-declarations": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "no-undef": "off",
+    "no-promise-executor-return": "off",
+    "vue/multi-word-component-names": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "no-unused-vars": "off",
+    // 允许非空断言
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "allowShortCircuit": "off", // 允许短路
+    "allowTernary": "off", // 允许三元
+    "@typescript-eslint/ban-ts-comment": "off", //    @ts-ignore 可以加ts注释
+    "no-shadow": "off", // 关闭不能重复定义变量，enum那边找不到解决方案
+    // 是否可以定义之前使用变量
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true,
+        "allowNamedExports": false
+      }
+    ]
+  }
+}

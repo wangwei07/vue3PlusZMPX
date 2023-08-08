@@ -1,0 +1,63 @@
+.el-range-input {
+  background-color: transparent !important;
+}
+
+.el-input__inner.is-active {
+  border: 1px solid #007f7d !important;
+  background: rgba(0, 36, 40, 0.4) !important;
+}
+
+.el-range-separator {
+  color: #fff !important;
+}
+.el-range-input {
+  color: #e2ffff !important;
+}
+
+.el-picker-panel__body {
+  color: #fff !important;
+  .el-icon {
+    color: #fff !important;
+  }
+  background: #002f3b !important;
+}
+
+.el-picker-panel__body .el-date-table th {
+  color: #3ef2b8 !important;
+  border-bottom-color: #007f7d !important;
+}
+
+.el-date-range-picker__content.is-left {
+  border-right-color: #007f7d !important;
+}
+
+.el-date-table td.today .el-date-table-cell__text {
+  color: #007f7d !important;
+  border: 1px solid #007f7d !important;
+  border-radius: 4px !important;
+}
+.el-date-table td .el-date-table-cell:hover .el-date-table-cell__text {
+  background: #007f7d !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+}
+
+/* 范围颜色 */
+
+.in-range .el-date-table-cell {
+  background-color: rgba(0, 127, 125, 0.5) !important;
+}
+
+.start-date.in-range .el-date-table-cell {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+.end-date.in-range .el-date-table-cell {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+.start-date .el-date-table-cell__text,
+.end-date .el-date-table-cell__text {
+  background-color: transparent !important;
+}

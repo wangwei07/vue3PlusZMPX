@@ -1,0 +1,53 @@
+$font-color-b: #2fabcb;
+$font-color-y: #eabc3c;
+
+/* zm-button border-color */
+$zm-button-border-color: #f0c78a;
+
+/*兼容的最小高度和宽度*/
+$appMinWidth: 1440px;
+$appMinHeight: 900px;
+
+/*设计稿宽度和高度*/
+$html_w: 1920;
+$html_h: 1080;
+
+/*主体内容区域包括上下padding*/
+$content_wrap_h: 950;
+
+/*主体内容那个宽度和高度*/
+$content_h: 884;
+$content_w: 1860;
+
+$animateTime3: 0.3s;
+
+/*  当前元素高度相对于 内容高度 左间距*/
+
+@mixin mlpb($left) {
+  margin-left: calc(($left / $html_w) * 100%);
+}
+@mixin wpr($width) {
+  width: calc($width / $html_w) * 100%;
+}
+
+/*  当前元素高度相对于 内容高度 百分比公式 以及当前内容与下一个元素上下间距的百分比公式 */
+
+@mixin hpr($height) {
+  height: calc($height / $html_h) * 100%;
+}
+@mixin wpr($width) {
+  width: calc($width / $html_w) * 100%;
+}
+
+@mixin vs_body_margin_percent($marginTop: 0, $marginBottom: 0) {
+  margin-top: calc(($marginTop / $content_h) * 100%);
+  margin-bottom: calc(($marginBottom / $content_h) * 100%);
+}
+
+/*  1个高度占另外一个高度的百分比 */
+@mixin hp2($height1, $height2) {
+  height: calc(($height1 / $height2) * 100%);
+}
+@mixin wp2($width1, $width2) {
+  width: calc(($width1 / $width2) * 100%);
+}

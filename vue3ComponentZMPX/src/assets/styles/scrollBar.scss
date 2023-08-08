@@ -1,0 +1,31 @@
+/* 全局滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #002f3b !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #007f7d !important;
+}
+
+/* 初始化table表格滚动条样式，
+   加上block,让其一直显示，默认是划过显示，在这里并不是改变 scrollbar 和 scrollbar-thumb，而是设置了两个元素的宽度和背景色 
+*/
+.el-scrollbar__bar.is-vertical {
+  /* display: block !important; */
+  width: 5px;
+  background-color: #002f3b !important;
+  .el-scrollbar__thumb {
+    width: 10px !important;
+    background-color: #007f7d !important;
+  }
+}
+
+/* 特殊设置二级滚动条 */
+.traceDetail .el-table ::-webkit-scrollbar,
+.warnDetail .el-table ::-webkit-scrollbar {
+  width: 2px !important;
+}

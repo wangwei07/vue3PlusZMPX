@@ -1,0 +1,55 @@
+/* 重置按钮 */
+.el-button--default {
+  border: 0 !important;
+  height: 34px !important;
+  font-size: 16px !important;
+  font-weight: normal !important;
+  color: #ffffff !important;
+  background: #51676f !important ;
+  padding: 0 24px !important;
+}
+.el-button--default.is-plain {
+  padding: 0 12px !important;
+}
+.el-button--default:hover {
+  background-color: rgba(81, 103, 111, 0.5) !important ;
+}
+.el-button--default:focus {
+  background-color: rgba(81, 103, 111, 0.75) !important ;
+}
+/* 搜素按钮 */
+.el-button--primary {
+  border: 0 !important;
+  background-color: #007f7d !important ;
+}
+.el-button--primary:hover {
+  background-color: rgba(0, 127, 125, 0.5) !important ;
+}
+.el-button--primary:focus,
+.el-button--primary.is-loading {
+  background-color: rgba(0, 127, 125, 0.75) !important ;
+}
+
+.el-switch.is-checked .el-switch__core {
+  background: #007f7d !important ;
+  border-color: #007f7d !important ;
+}
+
+/* 去除table表格按钮左右padding，左边距 */
+tr td:last-child .el-button {
+  background-color: transparent !important;
+  font-size: 14px !important;
+  padding: 0 10px !important;
+  margin-left: 3px !important;
+}
+tr td:last-child .el-button:hover {
+  background-color: #007f7d !important;
+}
+/* 倒数第二个之前加上一条线 */
+tr td:last-child .el-button:nth-last-child(n + 2):after {
+  content: '';
+  width: 0;
+  height: 13px;
+  transform: translateX(12px);
+  border: 1px solid #2b5353;
+}

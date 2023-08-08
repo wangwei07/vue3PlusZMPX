@@ -1,0 +1,37 @@
+#app .el-pagination__total.is-first {
+  color: #ffffff !important;
+
+  font-size: 12px !important;
+}
+
+.pagination-container .el-input {
+  width: auto !important;
+  font-size: 12px;
+  height: 24px !important;
+}
+.pagination-container .el-input .el-input__inner {
+  height: 24px !important;
+}
+
+.pagination-container .btn-prev {
+  background-color: transparent !important;
+}
+.pagination-container .btn-next {
+  background-color: transparent !important;
+}
+
+.pagination-container .number {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+.pagination-container .is-active.number {
+  background: #007f7d !important;
+}
+
+.pagination-container {
+  background-color: transparent !important;
+}
+
+.el-pagination__jump.is-last {
+  color: #ffffff !important;
+}

@@ -1,0 +1,72 @@
+.el-dialog,
+.el-message-box {
+  padding: 6px;
+  background-color: transparent !important;
+  border-image: url('@/assets/images/common/tcBg.png') 80 80 80 80 fill/40px
+    80px 70px 80px round !important;
+}
+
+.el-overlay-dialog {
+  display: flex;
+  align-items: center;
+}
+.el-dialog {
+  margin: 0 auto !important;
+}
+.el-dialog__body {
+  max-height: 800px;
+  overflow-y: auto;
+}
+
+.el-icon.el-dialog__close,
+.el-message-box__close {
+  font-size: 26px !important;
+  position: relative;
+  top: -10px;
+}
+.el-dialog__headerbtn:hover .el-icon.el-dialog__close {
+  color: #2b5353 !important;
+}
+.el-message-box__headerbtn:hover .el-message-box__close:hover {
+  color: #2b5353 !important;
+}
+
+.el-dialog__header,
+.el-message-box__header {
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 10px !important;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 127, 125, 1),
+    rgba(0, 127, 125, 0)
+  ) !important;
+}
+.el-dialog__title,
+.el-message-box__title {
+  font-size: 18px;
+  color: #fff !important;
+}
+
+/* 调整确定按钮与取消按钮的位置 */
+.el-message-box__btns {
+  flex-direction: row-reverse;
+  justify-content: flex-start !important;
+}
+
+.el-message-box__btns button:nth-child(1) {
+  margin-left: 10px;
+}
+
+.el-message-box__message p {
+  color: #fff;
+}
+
+.el-dialog__footer {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 20px !important;
+  padding-right: 0px !important;
+  border-top: 1px solid #2b5353;
+}

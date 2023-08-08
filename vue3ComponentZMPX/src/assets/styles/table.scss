@@ -1,0 +1,69 @@
+.el-table .cell {
+  color: #e2ffff !important;
+  font-size: 14px !important;
+}
+#app .el-table th {
+  border-top: 1px solid #00a9b7 !important;
+  border-bottom-color: #00a9b7 !important;
+  background: rgba(0, 127, 125, 0.16) !important;
+}
+#app .el-table td {
+  background-color: transparent !important;
+}
+
+#app .el-table td.el-table__cell {
+  border: 0 !important;
+}
+
+#app .el-table {
+  background-color: transparent !important;
+}
+
+#app tr {
+  height: 40px !important;
+  background-color: transparent !important;
+}
+
+#app tbody tr {
+  height: 60px !important;
+}
+
+.el-table__inner-wrapper::before {
+  background-color: #00a9b7 !important;
+}
+#app .el-table__row:nth-child(even) {
+  background: rgba(0, 127, 125, 0.16) !important;
+}
+#app .el-table__row:hover {
+  background: rgba(0, 127, 125, 0.5) !important;
+}
+
+#app .tableTree .el-table__row {
+  background-color: transparent !important;
+}
+#app .tableTree .el-table__row:hover {
+  background: rgba(0, 127, 125, 0.5) !important;
+}
+#app .tableTree {
+  /* 第一级别 */
+  tbody > .el-table__row td.el-table__cell {
+    border-bottom: 1px solid rgba(0, 127, 125, 0.5) !important;
+  }
+  /* 第二级别 */
+  tbody .el-table__row--level-1 td.el-table__cell {
+    border-bottom: 1px solid rgba(0, 127, 125, 0.16) !important;
+  }
+  /* 第三级别 */
+  tbody .el-table__row--level-2:nth-of-type(odd) {
+    background: rgba(0, 127, 125, 0.16) !important;
+  }
+}
+/* 为了让无数据的时候继承高度100% ,这里不能这么干，会影响滚动条*/
+.el-scrollbar__view {
+  /*  height: 100%; */
+}
+
+.el-table__expand-icon .el-icon {
+  font-size: 16px !important;
+  color: #fff;
+}

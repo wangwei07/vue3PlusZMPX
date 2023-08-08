@@ -1,0 +1,61 @@
+/* 
+select 样式设置
+*/
+
+// 选择框 去掉边框，除了border 还必须去掉 box-shadow
+.el-select-dropdown {
+  background: #002f3b !important;
+  margin-top: -10px;
+  border-radius: 2px 2px 2px 2px !important;
+  border: 1px solid #007f7d !important;
+}
+.el-select-dropdown__item {
+  padding-left: 10px !important;
+  color: #bcc0d1 !important;
+}
+.el-select-dropdown__item:hover {
+  background: rgba(0, 127, 125, 0.5) !important;
+}
+
+/* 去除调鼠标划过后加上的类的背景色 */
+.el-select-dropdown__item.hover {
+  background: rgba(0, 127, 125, 0.5) !important;
+}
+.el-select-dropdown__item.selected {
+  background: #007f7d !important;
+  background: rgba(0, 127, 125, 1) !important;
+}
+.el-select-dropdown__item.selected span {
+  color: #ffffff !important;
+}
+.el-popper__arrow {
+  display: none;
+}
+
+/* 改变右边图标 */
+
+/* 提示框宽高   */
+.el-popper.is-dark {
+  max-width: 60% !important;
+  max-height: 60% !important;
+  overflow-y: hidden;
+}
+
+/* 多选 */
+.el-select .el-tag {
+  color: #fff !important;
+  background-color: transparent !important;
+  border: 1px solid #007f7d !important;
+}
+.el-select .el-tag:hover {
+  background: rgba(0, 127, 125, 0.5) !important;
+}
+
+.el-popper {
+  background: rgba(0, 127, 125, 1) !important;
+}
+.el-popper .el-popper span {
+  color: #fff !important;
+
+  border: 1px solid #007f7d !important;
+}
